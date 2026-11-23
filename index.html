@@ -1,0 +1,1223 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>挠脚心tk恶魔刑房_原创趣味内容_沉浸式互动视频品牌官网</title>
+<meta name="description" content="挠脚心tk恶魔刑房官方网站，专注原创趣味互动视频内容，汇聚优质创作者与企业级内容生态，打造值得信赖的沉浸式娱乐社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2316121c'/%3E%3Cpath d='M20 44c0-10 6-22 14-22s12 10 12 20c0 4-3 6-7 6H26c-3 0-6-1-6-4z' fill='%23ff5a7a'/%3E%3Ccircle cx='27' cy='30' r='3' fill='%2316121c'/%3E%3Ccircle cx='39' cy='30' r='3' fill='%2316121c'/%3E%3Cpath d='M28 38c3 3 7 3 10 0' stroke='%2316121c' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --tkd-bg:#16121c;
+  --tkd-bg-soft:#1f1927;
+  --tkd-bg-card:#251e2f;
+  --tkd-ink:#f3edf6;
+  --tkd-ink-dim:#b4a7c0;
+  --tkd-accent:#ff5a7a;
+  --tkd-accent-2:#39e6c3;
+  --tkd-accent-3:#ffc65c;
+  --tkd-line:rgba(255,255,255,.09);
+  --tkd-radius:16px;
+  --tkd-sticky-h:104px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--tkd-bg);
+  color:var(--tkd-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+section{scroll-margin-top:var(--tkd-sticky-h)}
+
+.tkd-wrap{width:min(1180px,92vw);margin:0 auto}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.tkd-topbar{
+  position:sticky;top:0;z-index:60;
+  backdrop-filter:blur(14px);
+  background:rgba(22,18,28,.92);
+  border-bottom:1px solid var(--tkd-line);
+}
+.tkd-notice{
+  background:linear-gradient(90deg,#3a1533,#2a1533 45%,#1c2a33);
+  border-bottom:1px solid var(--tkd-line);
+  font-size:13.5px;
+  padding:9px 0;
+  overflow:hidden;
+}
+.tkd-notice-inner{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.tkd-notice-tag{
+  flex:0 0 auto;background:var(--tkd-accent);color:#1a0d14;
+  font-weight:800;font-size:11.5px;letter-spacing:.08em;
+  padding:3px 9px;border-radius:99px;
+}
+.tkd-notice-text{color:#e6dcef;font-size:13.5px}
+.tkd-notice-text strong{color:var(--tkd-accent-3)}
+.tkd-notice-link{margin-left:auto;color:var(--tkd-accent-2);font-weight:700;font-size:13px;white-space:nowrap}
+.tkd-notice-link:hover{text-decoration:underline}
+
+.tkd-header{padding:12px 0}
+.tkd-header-inner{display:flex;align-items:center;gap:22px}
+.tkd-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.tkd-brand-mark{
+  width:40px;height:40px;border-radius:12px;
+  background:linear-gradient(140deg,var(--tkd-accent),#8a2be2);
+  display:grid;place-items:center;font-weight:900;font-size:19px;color:#fff;
+  box-shadow:0 6px 18px rgba(255,90,122,.35);
+}
+.tkd-brand-name{font-size:16px;font-weight:900;letter-spacing:.02em;white-space:nowrap}
+.tkd-brand-sub{font-size:11px;color:var(--tkd-ink-dim);letter-spacing:.14em}
+
+.tkd-nav{display:flex;gap:4px;margin-left:6px;flex-wrap:wrap}
+.tkd-nav a{
+  font-size:14px;color:var(--tkd-ink-dim);padding:7px 12px;border-radius:9px;
+  transition:.18s;white-space:nowrap;
+}
+.tkd-nav a:hover{color:#fff;background:var(--tkd-bg-card)}
+
+.tkd-search{position:relative;margin-left:auto;flex:1 1 220px;max-width:300px}
+.tkd-search input{
+  width:100%;padding:9px 40px 9px 15px;border-radius:99px;
+  background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);
+  color:var(--tkd-ink);font-size:13.5px;outline:none;transition:.18s;
+}
+.tkd-search input:focus{border-color:var(--tkd-accent);box-shadow:0 0 0 3px rgba(255,90,122,.15)}
+.tkd-search-btn{
+  position:absolute;right:5px;top:50%;transform:translateY(-50%);
+  width:30px;height:30px;border-radius:50%;background:var(--tkd-accent);
+  color:#1a0d14;display:grid;place-items:center;font-size:14px;font-weight:800;
+}
+.tkd-search-msg{
+  position:absolute;left:0;right:0;top:calc(100% + 6px);
+  background:var(--tkd-bg-card);border:1px solid var(--tkd-line);
+  border-radius:12px;padding:10px 14px;font-size:12.5px;color:var(--tkd-accent-2);
+  display:none;z-index:70;box-shadow:0 14px 30px rgba(0,0,0,.5);
+}
+.tkd-search-msg.is-show{display:block}
+
+.tkd-burger{
+  display:none;margin-left:auto;width:42px;height:42px;border-radius:11px;
+  background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);
+  color:var(--tkd-ink);font-size:20px;
+}
+
+/* ---------- 首屏 ---------- */
+.tkd-hero{padding:56px 0 40px;position:relative;overflow:hidden}
+.tkd-hero::before{
+  content:"";position:absolute;inset:-180px -8% auto;
+  height:460px;border-radius:50%;
+  background:radial-gradient(circle at 30% 40%,rgba(255,90,122,.24),transparent 62%),
+             radial-gradient(circle at 72% 30%,rgba(57,230,195,.16),transparent 60%);
+  filter:blur(8px);pointer-events:none;
+}
+.tkd-hero-grid{
+  position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:44px;align-items:center;
+}
+.tkd-hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  color:var(--tkd-accent-2);letter-spacing:.1em;text-transform:uppercase;
+  background:rgba(57,230,195,.1);border:1px solid rgba(57,230,195,.3);
+  padding:5px 13px;border-radius:99px;margin-bottom:18px;
+}
+.tkd-hero h1{
+  font-size:clamp(34px,4.6vw,58px);letter-spacing:-.01em;
+  line-height:1.18;margin-bottom:18px;
+}
+.tkd-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,var(--tkd-accent),var(--tkd-accent-3));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.tkd-hero-lead{font-size:16px;color:var(--tkd-ink-dim);max-width:540px;margin-bottom:24px}
+.tkd-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.tkd-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 22px;border-radius:99px;
+  font-size:14px;font-weight:800;transition:.2s;
+}
+.tkd-btn-primary{
+  background:linear-gradient(100deg,var(--tkd-accent),#ff8f57);color:#24101a;
+  box-shadow:0 10px 26px rgba(255,90,122,.32);
+}
+.tkd-btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(255,90,122,.42)}
+.tkd-btn-ghost{border:1px solid var(--tkd-line);color:var(--tkd-ink);background:var(--tkd-bg-soft)}
+.tkd-btn-ghost:hover{border-color:var(--tkd-accent);color:#fff}
+
+.tkd-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:520px}
+.tkd-stat{background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);border-radius:14px;padding:14px 16px}
+.tkd-stat-num{font-size:24px;font-weight:900;color:var(--tkd-accent-3);line-height:1.1}
+.tkd-stat-label{font-size:12px;color:var(--tkd-ink-dim);margin-top:4px}
+
+.tkd-hero-visual{position:relative}
+.tkd-hero-frame{
+  border-radius:24px;overflow:hidden;border:1px solid var(--tkd-line);
+  box-shadow:0 30px 70px rgba(0,0,0,.55);position:relative;
+}
+.tkd-hero-frame img{width:100%;aspect-ratio:16/13;object-fit:cover}
+.tkd-hero-badge{
+  position:absolute;left:16px;bottom:16px;display:flex;align-items:center;gap:10px;
+  background:rgba(22,18,28,.78);backdrop-filter:blur(10px);
+  border:1px solid var(--tkd-line);border-radius:14px;padding:9px 14px;font-size:12.5px;
+}
+.tkd-hero-badge b{color:var(--tkd-accent-2)}
+.tkd-hero-chip{
+  position:absolute;top:16px;right:16px;background:var(--tkd-accent);color:#24101a;
+  font-size:11.5px;font-weight:900;padding:5px 12px;border-radius:99px;letter-spacing:.06em;
+}
+
+/* ---------- 通用 section ---------- */
+.tkd-sec{padding:56px 0;border-top:1px solid var(--tkd-line)}
+.tkd-sec-head{margin-bottom:30px;max-width:760px}
+.tkd-sec-eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--tkd-accent-2);text-transform:uppercase;margin-bottom:9px}
+.tkd-sec h2{font-size:clamp(24px,2.8vw,34px);margin-bottom:10px}
+.tkd-sec h2 span{color:var(--tkd-accent)}
+.tkd-sec-desc{color:var(--tkd-ink-dim);font-size:14.5px}
+
+/* 焦点内容 */
+.tkd-focus-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:26px}
+.tkd-focus-main{
+  background:var(--tkd-bg-card);border:1px solid var(--tkd-line);
+  border-radius:var(--tkd-radius);overflow:hidden;transition:.22s;
+}
+.tkd-focus-main:hover{transform:translateY(-3px);border-color:rgba(255,90,122,.45)}
+.tkd-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.tkd-focus-body{padding:20px 22px 24px}
+.tkd-tag-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.tkd-tag{
+  font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:99px;
+  background:rgba(255,90,122,.13);color:var(--tkd-accent);border:1px solid rgba(255,90,122,.26);
+}
+.tkd-tag-alt{background:rgba(57,230,195,.1);color:var(--tkd-accent-2);border-color:rgba(57,230,195,.26)}
+.tkd-focus-body h3{font-size:21px;margin-bottom:9px}
+.tkd-focus-body p{font-size:14px;color:var(--tkd-ink-dim);margin-bottom:15px}
+.tkd-meta{display:flex;gap:15px;font-size:12px;color:var(--tkd-ink-dim);flex-wrap:wrap;margin-bottom:15px}
+
+.tkd-focus-side{display:flex;flex-direction:column;gap:16px}
+.tkd-mini{
+  display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;
+  background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);
+  border-radius:14px;padding:12px;transition:.2s;
+}
+.tkd-mini:hover{background:var(--tkd-bg-card);border-color:rgba(255,198,92,.4)}
+.tkd-mini img{width:96px;aspect-ratio:1/1;object-fit:cover;border-radius:10px}
+.tkd-mini h4{font-size:14.5px;margin-bottom:6px;line-height:1.45}
+.tkd-mini p{font-size:12.5px;color:var(--tkd-ink-dim);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tkd-mini-meta{font-size:11.5px;color:var(--tkd-accent-3);margin-top:7px}
+
+/* 视频流列表 */
+.tkd-video-list{display:flex;flex-direction:column;gap:14px}
+.tkd-vrow{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;
+  background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);
+  border-radius:14px;padding:16px 20px;transition:.2s;
+}
+.tkd-vrow:hover{border-color:rgba(57,230,195,.4);background:var(--tkd-bg-card)}
+.tkd-vrow h3{font-size:16.5px;margin-bottom:6px}
+.tkd-vrow p{font-size:13px;color:var(--tkd-ink-dim);line-height:1.65;margin-bottom:9px}
+.tkd-vrow-tags{display:flex;gap:7px;flex-wrap:wrap}
+.tkd-vrow-tags span{font-size:11px;padding:2px 9px;border-radius:99px;background:rgba(255,255,255,.06);color:var(--tkd-ink-dim)}
+.tkd-vrow-act{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tkd-like-btn{
+  display:inline-flex;align-items:center;gap:6px;font-size:12.5px;
+  border:1px solid var(--tkd-line);border-radius:99px;padding:6px 13px;
+  background:var(--tkd-bg);color:var(--tkd-ink-dim);transition:.18s;
+}
+.tkd-like-btn:hover{border-color:var(--tkd-accent);color:var(--tkd-accent)}
+.tkd-like-btn.is-on{background:rgba(255,90,122,.16);border-color:var(--tkd-accent);color:var(--tkd-accent)}
+.tkd-fav-btn{
+  width:34px;height:34px;border-radius:50%;border:1px solid var(--tkd-line);
+  display:grid;place-items:center;font-size:15px;color:var(--tkd-ink-dim);transition:.18s;
+}
+.tkd-fav-btn:hover{color:var(--tkd-accent-3);border-color:var(--tkd-accent-3)}
+.tkd-fav-btn.is-on{color:var(--tkd-accent-3);border-color:var(--tkd-accent-3);background:rgba(255,198,92,.12)}
+
+/* 关键词解析 */
+.tkd-parse p{font-size:14.5px;color:#cfc3da;margin-bottom:16px}
+.tkd-parse h3{font-size:19px;margin:28px 0 11px;color:var(--tkd-accent-2)}
+.tkd-parse-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:22px 0 8px}
+.tkd-parse-card{background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);border-radius:14px;padding:17px 18px}
+.tkd-parse-card h4{font-size:14.5px;color:var(--tkd-accent-3);margin-bottom:7px}
+.tkd-parse-card p{font-size:13px;margin:0;color:var(--tkd-ink-dim)}
+
+/* 专题 */
+.tkd-special-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.tkd-special{
+  background:var(--tkd-bg-card);border:1px solid var(--tkd-line);border-radius:var(--tkd-radius);
+  padding:20px;display:flex;flex-direction:column;transition:.2s;
+}
+.tkd-special:hover{transform:translateY(-3px);border-color:rgba(255,198,92,.4)}
+.tkd-special img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:11px;margin-bottom:14px}
+.tkd-special-status{display:inline-flex;align-self:flex-start;font-size:11px;font-weight:800;padding:3px 10px;border-radius:99px;background:rgba(57,230,195,.13);color:var(--tkd-accent-2);margin-bottom:10px}
+.tkd-special h3{font-size:17px;margin-bottom:8px}
+.tkd-special p{font-size:13px;color:var(--tkd-ink-dim);margin-bottom:13px}
+.tkd-special ul{border-top:1px dashed var(--tkd-line);padding-top:12px;margin-top:auto}
+.tkd-special li{font-size:12.5px;color:var(--tkd-ink-dim);padding:5px 0;display:flex;gap:8px}
+.tkd-special li::before{content:"▸";color:var(--tkd-accent);flex:0 0 auto}
+
+/* 作者 */
+.tkd-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.tkd-author{
+  display:grid;grid-template-columns:60px minmax(0,1fr);gap:16px;
+  background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);
+  border-radius:14px;padding:18px;transition:.2s;
+}
+.tkd-author:hover{border-color:rgba(255,90,122,.4);background:var(--tkd-bg-card)}
+.tkd-avatar{
+  width:60px;height:60px;border-radius:50%;display:grid;place-items:center;
+  font-weight:900;font-size:22px;color:#1a0d14;flex:0 0 auto;
+}
+.tkd-author-name{font-size:15.5px;font-weight:800;display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px}
+.tkd-author-field{font-size:12px;color:var(--tkd-accent-2);margin-bottom:8px}
+.tkd-author-bio{font-size:12.5px;color:var(--tkd-ink-dim);line-height:1.65}
+.tkd-author-data{display:flex;gap:14px;font-size:11.5px;color:var(--tkd-accent-3);margin-top:9px}
+.tkd-author-more{
+  margin-top:10px;font-size:12px;color:var(--tkd-accent);font-weight:700;
+  border-bottom:1px dashed rgba(255,90,122,.4);
+}
+
+/* 评论 + 评分 */
+.tkd-rate-grid{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:26px}
+.tkd-rate-card{
+  background:linear-gradient(160deg,#2b1f38,#1d1929);border:1px solid var(--tkd-line);
+  border-radius:var(--tkd-radius);padding:24px;text-align:center;
+}
+.tkd-rate-score{font-size:52px;font-weight:900;line-height:1;color:var(--tkd-accent-3)}
+.tkd-rate-stars{font-size:19px;letter-spacing:3px;color:var(--tkd-accent);margin:10px 0 6px}
+.tkd-rate-label{font-size:12.5px;color:var(--tkd-ink-dim);margin-bottom:18px}
+.tkd-rate-bar{display:flex;align-items:center;gap:9px;font-size:11.5px;color:var(--tkd-ink-dim);margin-bottom:8px}
+.tkd-rate-bar span:first-child{width:34px;flex:0 0 auto}
+.tkd-rate-track{flex:1;height:6px;border-radius:99px;background:rgba(255,255,255,.09);overflow:hidden}
+.tkd-rate-fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--tkd-accent),var(--tkd-accent-3))}
+.tkd-rate-num{width:30px;text-align:right;flex:0 0 auto}
+
+.tkd-comment-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.tkd-comment{
+  background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);
+  border-radius:13px;padding:15px 17px;
+}
+.tkd-comment-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.tkd-comment-avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:900;color:#1a0d14}
+.tkd-comment-name{font-size:13px;font-weight:800}
+.tkd-comment-time{font-size:11px;color:var(--tkd-ink-dim);margin-left:auto}
+.tkd-comment p{font-size:13px;color:#cfc3da;line-height:1.7}
+
+/* FAQ */
+.tkd-faq{display:flex;flex-direction:column;gap:10px;max-width:900px}
+.tkd-faq details{
+  background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);
+  border-radius:12px;padding:0 18px;transition:.2s;
+}
+.tkd-faq details[open]{border-color:rgba(57,230,195,.4);background:var(--tkd-bg-card)}
+.tkd-faq summary{
+  cursor:pointer;font-size:14.5px;font-weight:700;padding:15px 0;list-style:none;
+  display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.tkd-faq summary::-webkit-details-marker{display:none}
+.tkd-faq summary::after{content:"+";color:var(--tkd-accent-2);font-size:19px;font-weight:400;flex:0 0 auto}
+.tkd-faq details[open] summary::after{content:"–"}
+.tkd-faq details p{font-size:13.5px;color:var(--tkd-ink-dim);padding:0 0 16px;line-height:1.75}
+
+/* 动态 */
+.tkd-news-list{display:flex;flex-direction:column}
+.tkd-news{
+  display:grid;grid-template-columns:110px minmax(0,1fr) auto;gap:16px;align-items:baseline;
+  padding:15px 4px;border-bottom:1px dashed var(--tkd-line);
+}
+.tkd-news:first-child{border-top:1px dashed var(--tkd-line)}
+.tkd-news-date{font-size:12px;color:var(--tkd-accent-3);font-weight:700}
+.tkd-news-title{font-size:14px;color:var(--tkd-ink)}
+.tkd-news-cat{font-size:11px;color:var(--tkd-ink-dim);border:1px solid var(--tkd-line);padding:2px 10px;border-radius:99px}
+
+/* 合作墙 */
+.tkd-partners{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.tkd-partner{
+  background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);border-radius:12px;
+  padding:18px 14px;text-align:center;font-size:13px;font-weight:700;color:var(--tkd-ink-dim);
+  transition:.2s;
+}
+.tkd-partner:hover{color:#fff;border-color:rgba(255,198,92,.45);transform:translateY(-2px)}
+.tkd-partner span{display:block;font-size:11px;color:var(--tkd-accent-2);margin-top:5px;font-weight:400}
+
+/* 页脚 */
+.tkd-footer{border-top:1px solid var(--tkd-line);padding:48px 0 26px;background:bgk}
+.tkd-footer-grid{display:grid;grid-template-columns:1.6fr repeat(3,minmax(0,1fr));gap:30px;margin-bottom:34px}
+.tkd-footer h4{font-size:13.5px;margin-bottom:12px;color:var(--tkd-accent-2)}
+.tkd-footer p,.tkd-footer li{font-size:12.5px;color:var(--tkd-ink-dim);line-height:1.9}
+.tkd-footer li:hover{color:#fff;cursor:pointer}
+.tkd-footer-bottom{
+  border-top:1px solid var(--tkd-line);padding-top:18px;display:flex;
+  justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:var(--tkd-ink-dim);
+}
+
+/* 回顶部 */
+.tkd-top-btn{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--tkd-accent);color:#24101a;font-size:18px;font-weight:900;
+  display:grid;place-items:center;box-shadow:0 10px 26px rgba(255,90,122,.4);
+  opacity:0;visibility:hidden;transition:.25s;z-index:55;
+}
+.tkd-top-btn.is-show{opacity:1;visibility:visible}
+.tkd-top-btn:hover{transform:translateY(-3px)}
+
+/* Toast */
+.tkd-toast{
+  position:fixed;left:50%;bottom:40px;transform:translate(-50%,20px);
+  background:#2b2338;border:1px solid rgba(57,230,195,.4);color:#e9fdf9;
+  font-size:13px;padding:11px 22px;border-radius:99px;z-index:90;
+  opacity:0;visibility:hidden;transition:.26s;white-space:nowrap;max-width:90vw;
+}
+.tkd-toast.is-show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+
+/* 弹窗 */
+.tkd-modal-mask{
+  position:fixed;inset:0;background:rgba(9,7,13,.78);backdrop-filter:blur(6px);
+  display:grid;place-items:center;z-index:80;opacity:0;visibility:hidden;transition:.24s;padding:20px;
+}
+.tkd-modal-mask.is-show{opacity:1;visibility:visible}
+.tkd-modal{
+  width:min(560px,100%);background:#221b2c;border:1px solid var(--tkd-line);
+  border-radius:18px;padding:26px;max-height:82vh;overflow:auto;position:relative;
+}
+.tkd-modal h3{font-size:19px;margin-bottom:12px}
+.tkd-modal p{font-size:13.5px;color:var(--tkd-ink-dim);margin-bottom:14px;line-height:1.8}
+.tkd-modal label{display:block;font-size:12.5px;font-weight:700;margin-bottom:6px;color:var(--tkd-accent-2)}
+.tkd-modal input,.tkd-modal textarea{
+  width:100%;background:var(--tkd-bg);border:1px solid var(--tkd-line);border-radius:10px;
+  color:var(--tkd-ink);font-family:inherit;font-size:13.5px;padding:10px 13px;margin-bottom:14px;outline:none;
+}
+.tkd-modal input:focus,.tkd-modal textarea:focus{border-color:var(--tkd-accent)}
+.tkd-modal textarea{min-height:96px;resize:vertical}
+.tkd-modal-close{
+  position:absolute;right:16px;top:14px;font-size:20px;color:var(--tkd-ink-dim);line-height:1;
+}
+.tkd-modal-close:hover{color:var(--tkd-accent)}
+.tkd-share-row{display:flex;gap:10px;flex-wrap:wrap}
+.tkd-share-row button{
+  padding:9px 18px;border-radius:99px;font-size:13px;font-weight:700;
+  background:var(--tkd-bg-soft);border:1px solid var(--tkd-line);color:var(--tkd-ink-dim);
+}
+.tkd-share-row button:hover{border-color:var(--tkd-accent);color:var(--tkd-accent)}
+
+/* 响应式 */
+@media (max-width:980px){
+  :root{--tkd-sticky-h:150px}
+  .tkd-nav{display:none}
+  .tkd-nav.is-open{
+    display:flex;flex-direction:column;position:absolute;left:0;right:0;top:100%;
+    background:#1b1523;border-bottom:1px solid var(--tkd-line);padding:12px 5vw 18px;gap:2px;
+  }
+  .tkd-nav a{padding:11px 8px;font-size:15px}
+  .tkd-burger{display:grid;place-items:center}
+  .tkd-header-inner{flex-wrap:wrap;position:relative}
+  .tkd-search{order:3;flex:1 1 100%;max-width:none;margin-left:0;margin-top:6px}
+  .tkd-hero-grid{grid-template-columns:minmax(0,1fr);gap:30px}
+  .tkd-focus-grid,.tkd-rate-grid{grid-template-columns:minmax(0,1fr)}
+  .tkd-special-grid,.tkd-author-grid,.tkd-comment-list,.tkd-parse-grid{grid-template-columns:minmax(0,1fr)}
+  .tkd-partners{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tkd-footer-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+}
+@media (max-width:640px){
+  .tkd-vrow{grid-template-columns:minmax(0,1fr);gap:12px}
+  .tkd-stats{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .tkd-news{grid-template-columns:minmax(0,1fr);gap:5px}
+  .tkd-mini{grid-template-columns:74px minmax(0,1fr)}
+  .tkd-mini img{width:74px}
+  .tkd-footer-grid{grid-template-columns:minmax(0,1fr)}
+  .tkd-author{grid-template-columns:52px minmax(0,1fr);gap:13px}
+  .tkd-avatar{width:52px;height:52px;font-size:19px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="tkd-topbar">
+  <div class="tkd-notice">
+    <div class="tkd-wrap tkd-notice-inner">
+      <span class="tkd-notice-tag">官方发布</span>
+      <span class="tkd-notice-text">「恶魔刑房」第二季全新企划上线 · <strong>12</strong> 组全新互动场景开放体验 · 创作者征集同步开启</span>
+      <a href="#tkd-special" class="tkd-notice-link">查看企划详情 →</a>
+    </div>
+  </div>
+  <div class="tkd-header">
+    <div class="tkd-wrap tkd-header-inner">
+      <a class="tkd-brand" href="#tkd-hero">
+        <span class="tkd-brand-mark">挠</span>
+        <span>
+          <span class="tkd-brand-name">挠脚心tk恶魔刑房</span>
+          <span class="tkd-brand-sub">OFFICIAL VIDEO HUB</span>
+        </span>
+      </a>
+      <nav class="tkd-nav" id="tkdNav">
+        <a href="#tkd-hero">首页</a>
+        <a href="#tkd-focus">焦点内容</a>
+        <a href="#tkd-videos">视频专区</a>
+        <a href="#tkd-parse">品牌解析</a>
+        <a href="#tkd-special">专题企划</a>
+        <a href="#tkd-authors">创作者</a>
+        <a href="#tkd-comments">用户口碑</a>
+        <a href="#tkd-faq">帮助中心</a>
+      </nav>
+      <div class="tkd-search">
+        <input type="search" id="tkdSearchInput" placeholder="搜索视频、专题或创作者" aria-label="站内搜索">
+        <button class="tkd-search-btn" id="tkdSearchBtn" aria-label="执行搜索">→</button>
+        <div class="tkd-search-msg" id="tkdSearchMsg"></div>
+      </div>
+      <button class="tkd-burger" id="tkdBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</div>
+
+<main>
+
+<!-- S2 首屏 -->
+<section class="tkd-hero" id="tkd-hero">
+  <div class="tkd-wrap tkd-hero-grid">
+    <div>
+      <span class="tkd-hero-kicker">官方网站 · 原创正版 · 高清互动</span>
+      <h1>挠脚心tk恶魔刑房</h1>
+      <p class="tkd-hero-lead">一个以沉浸式趣味互动为核心的原创视频品牌官网。我们深耕垂直领域内容生态，汇聚专业创作者，用真实、温暖又充满创意的影像，为社区持续输出值得信赖的精品内容。</p>
+      <div class="tkd-hero-actions">
+        <a class="tkd-btn tkd-btn-primary" href="#tkd-videos">进入视频专区</a>
+        <button class="tkd-btn tkd-btn-ghost" data-tkd-modal="submit">投稿 / 报名</button>
+        <button class="tkd-btn tkd-btn-ghost" data-tkd-modal="share">分享官网</button>
+      </div>
+      <div class="tkd-stats">
+        <div class="tkd-stat">
+          <div class="tkd-stat-num">1,280+</div>
+          <div class="tkd-stat-label">原创高清视频</div>
+        </div>
+        <div class="tkd-stat">
+          <div class="tkd-stat-num">86.4万</div>
+          <div class="tkd-stat-label">社区创作者关注</div>
+        </div>
+        <div class="tkd-stat">
+          <div class="tkd-stat-num">97.2%</div>
+          <div class="tkd-stat-label">用户口碑好评率</div>
+        </div>
+      </div>
+    </div>
+    <div class="tkd-hero-visual">
+      <div class="tkd-hero-frame">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 650'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23241733'/%3E%3Cstop offset='1' stop-color='%234a1738'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff5a7a'/%3E%3Cstop offset='1' stop-color='%23ffc65c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='650' fill='url(%23g1)'/%3E%3Ccircle cx='620' cy='120' r='190' fill='%23ff5a7a' opacity='.12'/%3E%3Ccircle cx='140' cy='540' r='210' fill='%2339e6c3' opacity='.1'/%3E%3Crect x='90' y='120' width='620' height='410' rx='26' fill='%231d1526' stroke='%23ff5a7a' stroke-opacity='.4'/%3E%3Crect x='120' y='150' width='560' height='250' rx='14' fill='%23271d33'/%3E%3Cpath d='M240 300c0 46 34 84 84 84s84-38 84-84' stroke='url(%23g2)' stroke-width='14' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='324' cy='300' r='12' fill='%2339e6c3'/%3E%3Cpath d='M480 268c22 0 40 18 40 40s-18 40-40 40' stroke='%23ffc65c' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3Crect x='130' y='425' width='240' height='16' rx='8' fill='%23ff5a7a' opacity='.55'/%3E%3Crect x='130' y='458' width='380' height='10' rx='5' fill='%23ffffff' opacity='.22'/%3E%3Crect x='130' y='482' width='300' height='10' rx='5' fill='%23ffffff' opacity='.14'/%3E%3Ccircle cx='620' cy='470' r='34' fill='url(%23g2)'/%3E%3Cpath d='M610 470l8 9 15-18' stroke='%2324101a' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" alt="挠脚心tk恶魔刑房品牌主视觉，暗紫舞台与互动装置">
+      </div>
+      <span class="tkd-hero-chip">原创正版</span>
+      <div class="tkd-hero-badge">本周更新 <b>8</b> 部新片 · 全部高清</div>
+    </div>
+  </div>
+</section>
+
+<!-- S3 焦点内容 -->
+<section class="tkd-sec" id="tkd-focus">
+  <div class="tkd-wrap">
+    <div class="tkd-sec-head">
+      <div class="tkd-sec-eyebrow">Focus / 焦点推荐</div>
+      <h2>本期<span>焦点内容</span>：恶魔刑房的新玩法</h2>
+      <p class="tkd-sec-desc">由官网内容团队与社区创作者共同策划，每周精选 3 组高口碑作品，覆盖场景体验、创作幕后与互动技巧。</p>
+    </div>
+    <div class="tkd-focus-grid">
+      <article class="tkd-focus-main">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Cdefs%3E%3ClinearGradient id='a1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b1224'/%3E%3Cstop offset='1' stop-color='%23331a2c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='540' fill='url(%23a1)'/%3E%3Cpath d='M0 420h960' stroke='%23ff5a7a' stroke-opacity='.28' stroke-width='2'/%3E%3Crect x='70' y='70' width='380' height='300' rx='20' fill='%232a1f38' stroke='%23ff5a7a' stroke-opacity='.45'/%3E%3Ccircle cx='260' cy='210' r='80' fill='none' stroke='%23ffc65c' stroke-width='12' stroke-dasharray='20 14'/%3E%3Ccircle cx='260' cy='210' r='30' fill='%23ff5a7a' opacity='.8'/%3E%3Crect x='510' y='110' width='380' height='120' rx='14' fill='%23251b31' stroke='%2339e6c3' stroke-opacity='.4'/%3E%3Crect x='510' y='256' width='380' height='120' rx='14' fill='%23251b31' stroke='%2339e6c3' stroke-opacity='.25'/%3E%3Crect x='540' y='140' width='200' height='12' rx='6' fill='%23ff5a7a' opacity='.6'/%3E%3Crect x='540' y='166' width='290' height='8' rx='4' fill='%23ffffff' opacity='.2'/%3E%3Crect x='540' y='286' width='160' height='12' rx='6' fill='%2339e6c3' opacity='.6'/%3E%3Crect x='540' y='312' width='250' height='8' rx='4' fill='%23ffffff' opacity='.2'/%3E%3Cpath d='M790 470l40-40v80z' fill='%23ff5a7a' opacity='.65'/%3E%3C/svg%3E" alt="本期焦点内容封面：恶魔刑房互动场景与规则面板">
+        <div class="tkd-focus-body">
+          <div class="tkd-tag-row">
+            <span class="tkd-tag">重点企划</span>
+            <span class="tkd-tag tkd-tag-alt">场景体验</span>
+            <span class="tkd-tag">高清</span>
+          </div>
+          <h3>《刑房第一夜》完整版：三种互动模式实测</h3>
+          <p>从灯光调度到音效触发，我们用 42 分钟的完整记录，拆解恶魔刑房如何在保证安全与尊重的前提下，把紧张感和趣味性同时拉到最高。适合第一次接触的新朋友了解整体流程。</p>
+          <div class="tkd-meta">
+            <span>创作者：夜灯工作室</span>
+            <span>播放 24.6万</span>
+            <span>点赞 3.8万</span>
+            <span>收藏 1.2万</span>
+          </div>
+          <div class="tkd-vrow-act">
+            <button class="tkd-like-btn" data-tkd-like>🤍 <span>3.8万</span></button>
+            <button class="tkd-fav-btn" data-tkd-fav aria-label="收藏该视频">☆</button>
+            <button class="tkd-btn tkd-btn-ghost" data-tkd-modal="comment">展开评论</button>
+          </div>
+        </div>
+      </article>
+      <div class="tkd-focus-side">
+        <article class="tkd-mini">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23201a2b'/%3E%3Ccircle cx='150' cy='120' r='62' fill='none' stroke='%2339e6c3' stroke-width='9'/%3E%3Ccircle cx='150' cy='120' r='20' fill='%23ffc65c'/%3E%3Crect x='60' y='220' width='180' height='12' rx='6' fill='%23ff5a7a' opacity='.6'/%3E%3Crect x='90' y='246' width='120' height='8' rx='4' fill='%23ffffff' opacity='.22'/%3E%3C/svg%3E" alt="创作者幕后记录封面：绿光圈与灯光调试">
+          <div>
+            <h4>灯光师的 7 个暗色布光技巧</h4>
+            <p>用最少的灯光器材，做出刑房那种压迫又不安的氛围。</p>
+            <div class="tkd-mini-meta">幕后 · 播放 9.7万</div>
+          </div>
+        </article>
+        <article class="tkd-mini">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%232a1a24'/%3E%3Cpath d='M60 210l60-90 60 90z' fill='%23ff5a7a' opacity='.55'/%3E%3Cpath d='M120 250l60-90 60 90z' fill='%23ffc65c' opacity='.4'/%3E%3Ccircle cx='220' cy='80' r='26' fill='%2339e6c3' opacity='.7'/%3E%3C/svg%3E" alt="新手入门指南封面：三角图形与圆形色块组合">
+          <div>
+            <h4>新手入门：先做对这三件事</h4>
+            <p>安全意识、沟通边界与节奏设计，比设备更值得投入。</p>
+            <div class="tkd-mini-meta">教程 · 播放 12.3万</div>
+          </div>
+        </article>
+        <article class="tkd-mini">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23211b30'/%3E%3Crect x='50' y='80' width='200' height='24' rx='12' fill='%2339e6c3' opacity='.55'/%3E%3Crect x='50' y='128' width='150' height='24' rx='12' fill='%23ff5a7a' opacity='.5'/%3E%3Crect x='50' y='176' width='180' height='24' rx='12' fill='%23ffc65c' opacity='.45'/%3E%3Crect x='50' y='224' width='110' height='24' rx='12' fill='%23ffffff' opacity='.18'/%3E%3C/svg%3E" alt="对话访谈封面：多层色条与信息卡">
+          <div>
+            <h4>对话社区主理人：我们如何守住边界</h4>
+            <p>关于安全词、内容审核与社区公约的一次坦白聊天。</p>
+            <div class="tkd-mini-meta">访谈 · 播放 6.1万</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S3 视频专区 -->
+<section class="tkd-sec" id="tkd-videos">
+  <div class="tkd-wrap">
+    <div class="tkd-sec-head">
+      <div class="tkd-sec-eyebrow">Videos / 视频专区</div>
+      <h2>挠脚心tk恶魔刑房<span>视频专区</span></h2>
+      <p class="tkd-sec-desc">六档常驻栏目持续更新，涵盖场景实拍、技巧拆解与创作者对谈。全部为高清正版内容，支持点赞与收藏。</p>
+    </div>
+    <div class="tkd-video-list">
+      <article class="tkd-vrow">
+        <div>
+          <h3>《倒计时房间》第三期：五分钟内的情绪曲线设计</h3>
+          <p>把一段互动拆解成开场、加压、转折、收束四个阶段，每一段都给出具体的时间点与观察提示。</p>
+          <div class="tkd-vrow-tags"><span>节奏设计</span><span>场景实拍</span><span>高清</span></div>
+        </div>
+        <div class="tkd-vrow-act">
+          <button class="tkd-like-btn" data-tkd-like>🤍 <span>2.1万</span></button>
+          <button class="tkd-fav-btn" data-tkd-fav aria-label="收藏倒计时房间第三期">☆</button>
+        </div>
+      </article>
+      <article class="tkd-vrow">
+        <div>
+          <h3>「挠脚心」道具组手记：从泡沫板到定制模具</h3>
+          <p>跟拍道具组完整的一周，从草模到成品，四次返工换来的手感反馈，都在这期幕后里。</p>
+          <div class="tkd-vrow-tags"><span>创作幕后</span><span>道具</span><span>手作</span></div>
+        </div>
+        <div class="tkd-vrow-act">
+          <button class="tkd-like-btn" data-tkd-like>🤍 <span>1.6万</span></button>
+          <button class="tkd-fav-btn" data-tkd-fav aria-label="收藏道具组手记">☆</button>
+        </div>
+      </article>
+      <article class="tkd-vrow">
+        <div>
+          <h3>安全词机制怎么定？三位资深创作者的实战经验</h3>
+          <p>不同强度场景下的安全词设计差异、如何做二次确认，以及最容易被忽略的收尾环节。</p>
+          <div class="tkd-vrow-tags"><span>实用技巧</span><span>访谈</span><span>社区公约</span></div>
+        </div>
+        <div class="tkd-vrow-act">
+          <button class="tkd-like-btn" data-tkd-like>🤍 <span>3.4万</span></button>
+          <button class="tkd-fav-btn" data-tkd-fav aria-label="收藏安全词机制经验">☆</button>
+        </div>
+      </article>
+      <article class="tkd-vrow">
+        <div>
+          <h3>一人分饰两角：单人创作的机位与剪辑方案</h3>
+          <p>预算有限也能拍出双人互动感，这期给出一套可直接复用的三机位与对轴剪辑流程。</p>
+          <div class="tkd-vrow-tags"><span>教程干货</span><span>剪辑</span><span>低成本</span></div>
+        </div>
+        <div class="tkd-vrow-act">
+          <button class="tkd-like-btn" data-tkd-like>🤍 <span>8,900</span></button>
+          <button class="tkd-fav-btn" data-tkd-fav aria-label="收藏一人分饰两角方案">☆</button>
+        </div>
+      </article>
+      <article class="tkd-vrow">
+        <div>
+          <h3>观众投票选出的年度场景：结果与复盘</h3>
+          <p>历时三周、参与投票四万余人，年度场景排名公布，同时聊聊票数背后的社区偏好变化。</p>
+          <div class="tkd-vrow-tags"><span>投票</span><span>年度盘点</span><span>社区</span></div>
+        </div>
+        <div class="tkd-vrow-act">
+          <button class="tkd-like-btn" data-tkd-like>🤍 <span>5.2万</span></button>
+          <button class="tkd-fav-btn" data-tkd-fav aria-label="收藏年度场景投票复盘">☆</button>
+        </div>
+      </article>
+      <article class="tkd-vrow">
+        <div>
+          <h3>城市夜拍计划：在旧厂房里搭一间临时刑房</h3>
+          <p>场地勘探、电容量估算、噪音与消防预案，一次真实的外景搭建全记录。</p>
+          <div class="tkd-vrow-tags"><span>城市探索</span><span>外景</span><span>幕后</span></div>
+        </div>
+        <div class="tkd-vrow-act">
+          <button class="tkd-like-btn" data-tkd-like>🤍 <span>1.1万</span></button>
+          <button class="tkd-fav-btn" data-tkd-fav aria-label="收藏城市夜拍计划">☆</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- M15 品牌解析 -->
+<section class="tkd-sec" id="tkd-parse">
+  <div class="tkd-wrap tkd-parse">
+    <div class="tkd-sec-head">
+      <div class="tkd-sec-eyebrow">About / 品牌解析</div>
+      <h2>关于<span>挠脚心tk恶魔刑房</span>，你需要了解的四个层面</h2>
+      <p class="tkd-sec-desc">作为持续运营的原创视频品牌，我们始终把安全、尊重与真实感放在创作的第一顺位。</p>
+    </div>
+
+    <h3>一、品牌定位：为什么是「刑房」，又为什么温柔</h3>
+    <p>很多人第一次看到「挠脚心tk恶魔刑房」这个名字，会以为它指向某种猎奇内容。事实上，这个名字来自社区早期的一次玩笑：创作者们把紧张到心跳加速的互动现场，戏称为「刑房」。但真正进入其中的人都清楚，这里的底色是安全、信任和恰到好处的趣味。我们把「恶魔」理解为一种角色化的戏剧感——它负责制造悬念与压迫的氛围，让参与者在知道一切可控的前提下，体验被推着往前走的那一点点紧张。作为官方网站，我们从第一天起就明确了三条不可越界的线：任何内容都必须建立在充分沟通之上，任何强度都必须有明确的暂停机制，任何素材都必须获得参与者本人的正式授权。这三点构成了品牌的专业底色，也决定了我们能在垂直领域持续深耕、赢得用户口碑的原因。</p>
+
+    <h3>二、内容逻辑：用制作标准做「看起来随意」的视频</h3>
+    <p>挠脚心tk恶魔刑房的内容生态并不是简单的记录。我们内部有一套完整的生产流程：选题会先确认场景目的，是展示技巧、记录情绪，还是做创作者访谈；接着进入场景设计，把每一处灯光、音效与道具位置画进平面图；再到拍摄，主机位负责整体关系，辅机位负责情绪特写，环境机位负责空间感；最后是剪辑环节，强调真实反应优于戏剧化剪辑。这套流程让我们的视频既有专业质感，也保留了现场的真实毛边。高清画质是基础，但我们更看重的是观众能不能从画面里读懂参与者的状态——什么时候放松、什么时候紧绷、什么瞬间忽然笑场。这种对细节的执着，正是企业级内容团队与随手拍摄之间最明显的差别，也是平台能够长期输出精品内容的核心能力。</p>
+
+    <div class="tkd-parse-grid">
+      <div class="tkd-parse-card">
+        <h4>场景标准化</h4>
+        <p>每间「刑房」都有固定的安全检查清单与动线设计，布景可复用、可复现。</p>
+      </div>
+      <div class="tkd-parse-card">
+        <h4>创作透明化</h4>
+        <p>幕后花絮同步公开，包含道具制作、灯光方案与现场沟通流程。</p>
+      </div>
+      <div class="tkd-parse-card">
+        <h4>社区公约化</h4>
+        <p>评论、投稿与投票均遵循统一社区规范，鼓励善意表达与多元审美。</p>
+      </div>
+    </div>
+
+    <h3>三、社区运营：让创作者与观众共同成长</h3>
+    <p>一个视频品牌能否长久，靠的不只是作品数量，更是社区的温度。挠脚心tk恶魔刑房的运营团队把大量精力放在社区建设上：新人创作者进入时会收到一份详尽的创作手册，里面写清了拍摄前沟通话术、常见误区与安全底线；老创作者则可以通过投稿入口提交企划，经过内容组评估后获得场景、设备与后期支持。我们定期举办线上比赛与主题挑战，让不同风格的创作者在同一命题下相互切磋；也会开放投票，让观众决定下一季的场景走向。这种双向的陪伴关系，让平台不再只是一个内容仓库，而更像一个持续生长的兴趣共同体。用户至上是我们的原则，包容与多元是我们的态度，而真实与温暖，是我们希望每一帧画面都能传递的力量。</p>
+
+    <h3>四、行业观察：垂直内容的长期价值</h3>
+    <p>过去几年，短视频行业经历了从流量红利到品质竞争的转变。在垂直领域里，单条爆款带来的关注往往短暂，真正留住用户的是稳定的制作水准和可预期的内容节奏。挠脚心tk恶魔刑房的实践印证了这一点：我们坚持每周固定更新、每月一次深度企划、每季度一次社区盘点，用节奏感建立信任。同时，我们也在探索更健康的内容表达方式，把创作过程本身变成可观赏的内容，让观众理解「为什么这样拍」而不只是「看到了什么」。行业领先从来不是自封的标签，而是被一次次具体的作品、一条条真诚的评论、一场场公开透明的活动慢慢积累出来的。我们相信，只要保持匠心与创新，垂直内容同样能拥有广泛的社会影响力，也能承担起相应的社会责任。</p>
+  </div>
+</section>
+
+<!-- S4 专题企划 -->
+<section class="tkd-sec" id="tkd-special">
+  <div class="tkd-wrap">
+    <div class="tkd-sec-head">
+      <div class="tkd-sec-eyebrow">Specials / 专题企划</div>
+      <h2>三组<span>专题企划</span>正在更新</h2>
+      <p class="tkd-sec-desc">官网内容团队牵头、社区共创，每个专题至少三条完整内容，全部支持高清播放与收藏。</p>
+    </div>
+    <div class="tkd-special-grid">
+      <article class="tkd-special">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%2320182d'/%3E%3Crect x='50' y='60' width='250' height='240' rx='16' fill='%23301f3e' stroke='%23ff5a7a' stroke-opacity='.5'/%3E%3Ccircle cx='175' cy='160' r='54' fill='none' stroke='%23ffc65c' stroke-width='10'/%3E%3Cpath d='M175 106v108M121 160h108' stroke='%23ff5a7a' stroke-width='6' opacity='.7'/%3E%3Crect x='340' y='90' width='250' height='44' rx='12' fill='%232a1f38' stroke='%2339e6c3' stroke-opacity='.4'/%3E%3Crect x='340' y='160' width='250' height='44' rx='12' fill='%232a1f38' stroke='%2339e6c3' stroke-opacity='.28'/%3E%3Crect x='340' y='230' width='250' height='44' rx='12' fill='%232a1f38' stroke='%2339e6c3' stroke-opacity='.18'/%3E%3C/svg%3E" alt="专题企划「第二季·十二间房」封面，暗紫房间与符号组合">
+        <span class="tkd-special-status">更新中 · 已上线 7 期</span>
+        <h3>第二季 · 十二间房</h3>
+        <p>十二个风格迥异的互动场景，从极简白房到旧剧院改造，每期解锁一间，讲述搭建思路与现场故事。</p>
+        <ul>
+          <li>第七间：镜面回廊的压力设计</li>
+          <li>第六间：旧剧场座椅与声音反射</li>
+          <li>第五间：暖光小屋的反差实验</li>
+        </ul>
+      </article>
+      <article class="tkd-special">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%231c2330'/%3E%3Cpath d='M0 300l120-120 100 90 130-150 150 180z' fill='%2339e6c3' opacity='.22'/%3E%3Ccircle cx='500' cy='110' r='46' fill='%23ffc65c' opacity='.55'/%3E%3Crect x='60' y='60' width='180' height='16' rx='8' fill='%23ff5a7a' opacity='.6'/%3E%3Crect x='60' y='96' width='120' height='10' rx='5' fill='%23ffffff' opacity='.2'/%3E%3C/svg%3E" alt="专题企划「创作者成长计划」封面，冷蓝山形与暖阳">
+        <span class="tkd-special-status">招募中 · 第 4 批</span>
+        <h3>创作者成长计划</h3>
+        <p>面向新人创作者的系统扶持企划，包含脚本诊断、场景支持与流量推荐，已完成三批共 46 位创作者孵化。</p>
+        <ul>
+          <li>脚本门诊：每月开放 20 个名额</li>
+          <li>场景共建：可申请总部影棚使用</li>
+          <li>成长复盘：季度数据与作品对照</li>
+        </ul>
+      </article>
+      <article class="tkd-special">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%232a1a20'/%3E%3Crect x='60' y='230' width='520' height='14' rx='7' fill='%23ff5a7a' opacity='.5'/%3E%3Crect x='60' y='270' width='360' height='14' rx='7' fill='%23ffc65c' opacity='.45'/%3E%3Ccircle cx='180' cy='130' r='62' fill='none' stroke='%23ffffff' stroke-opacity='.3' stroke-width='8'/%3E%3Ccircle cx='380' cy='130' r='62' fill='none' stroke='%23ff5a7a' stroke-opacity='.55' stroke-width='8'/%3E%3Ccircle cx='520' cy='130' r='40' fill='%2339e6c3' opacity='.5'/%3E%3C/svg%3E" alt="专题企划「年度社区回声」封面，三个圆环与色条">
+        <span class="tkd-special-status">已完结 · 共 5 期</span>
+        <h3>年度社区回声</h3>
+        <p>把镜头交给观众与创作者，记录这一年里最被记住的瞬间、最真诚的建议和最意外的感动。</p>
+        <ul>
+          <li>观众来信：他们为什么留下</li>
+          <li>创作者圆桌：边界与创意</li>
+          <li>年度盘点：数据背后的故事</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S5 创作者矩阵 -->
+<section class="tkd-sec" id="tkd-authors">
+  <div class="tkd-wrap">
+    <div class="tkd-sec-head">
+      <div class="tkd-sec-eyebrow">Creators / 创作者矩阵</div>
+      <h2>与<span>挠脚心tk恶魔刑房</span>共同成长的创作者</h2>
+      <p class="tkd-sec-desc">双列简介展示，点按可查看作者档案。每一位创作者均通过内容审核与身份认证。</p>
+    </div>
+    <div class="tkd-author-grid">
+      <article class="tkd-author">
+        <div class="tkd-avatar" style="background:linear-gradient(140deg,#ff5a7a,#ffc65c)">夜</div>
+        <div>
+          <div class="tkd-author-name">夜灯工作室 <span class="tkd-tag tkd-tag-alt">认证</span></div>
+          <div class="tkd-author-field">擅长：场景实拍 / 氛围灯光</div>
+          <p class="tkd-author-bio">由两位灯光师与一位导演组成的小团队，最早参与刑房场景搭建。擅长用低成本灯具做出强压迫感的画面，作品节奏克制、细节密集，是社区公认的氛围营造标杆。</p>
+          <div class="tkd-author-data"><span>作品 86</span><span>粉丝 12.4万</span></div>
+          <button class="tkd-author-more" data-tkd-author="夜灯工作室：成立于三年前，核心成员来自舞台灯光与小成本电影团队。近两年专注互动类场景影像，主张「氛围先于刺激」，在每一条作品中都保留完整的安全提示与幕后说明。">查看档案 →</button>
+        </div>
+      </article>
+      <article class="tkd-author">
+        <div class="tkd-avatar" style="background:linear-gradient(140deg,#39e6c3,#5a9bff)">阿</div>
+        <div>
+          <div class="tkd-author-name">阿雾 <span class="tkd-tag tkd-tag-alt">认证</span></div>
+          <div class="tkd-author-field">擅长：节奏设计 / 教程拆解</div>
+          <p class="tkd-author-bio">从业五年的内容策划，擅长把复杂的互动流程拆成可复用的表格与步骤。她的教程视频以清晰著称，评论区常被称为「新人的第一本手册」，也参与社区公约的起草。</p>
+          <div class="tkd-author-data"><span>作品 124</span><span>粉丝 18.7万</span></div>
+          <button class="tkd-author-more" data-tkd-author="阿雾：前综艺节目策划，目前独立创作。她坚持每期视频附带一页可视化流程图，帮助新手理解节奏与停顿，是平台教程类内容的重要支柱。">查看档案 →</button>
+        </div>
+      </article>
+      <article class="tkd-author">
+        <div class="tkd-avatar" style="background:linear-gradient(140deg,#ffc65c,#ff8f57)">老</div>
+        <div>
+          <div class="tkd-author-name">老周手作</div>
+          <div class="tkd-author-field">擅长：道具制作 / 手作DIY</div>
+          <p class="tkd-author-bio">木工出身的道具师，为刑房系列制作过四十余件定制道具。喜欢在视频里完整保留返工过程，认为失败的经验比成品更有价值，作品带有强烈的手工质感与生活气息。</p>
+          <div class="tkd-author-data"><span>作品 63</span><span>粉丝 9.6万</span></div>
+          <button class="tkd-author-more" data-tkd-author="老周手作：从业二十年的木工，三年前开始把工作过程拍成视频。他的道具间对外开放预约参观，也定期为社区创作者提供制作指导。">查看档案 →</button>
+        </div>
+      </article>
+      <article class="tkd-author">
+        <div class="tkd-avatar" style="background:linear-gradient(140deg,#b98cff,#ff5a7a)">言</div>
+        <div>
+          <div class="tkd-author-name">言午观察</div>
+          <div class="tkd-author-field">擅长：行业观察 / 人物访谈</div>
+          <p class="tkd-author-bio">媒体人转行的深度内容创作者，关注垂直领域的长期价值与社区治理。访谈风格温和但不回避尖锐问题，多期节目推动了平台规则的公开讨论与完善。</p>
+          <div class="tkd-author-data"><span>作品 41</span><span>粉丝 7.2万</span></div>
+          <button class="tkd-author-more" data-tkd-author="言午观察：曾任职于文化类媒体，现专注内容行业访谈。她主张「把问题问完」，在访谈中常保留未剪辑的长段落，为行业留下可回溯的口述材料。">查看档案 →</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- S6 口碑与评分 -->
+<section class="tkd-sec" id="tkd-comments">
+  <div class="tkd-wrap">
+    <div class="tkd-sec-head">
+      <div class="tkd-sec-eyebrow">Voices / 用户口碑</div>
+      <h2>真实评价，构成<span>平台口碑</span>的底色</h2>
+      <p class="tkd-sec-desc">评分摘要与双列短评结合呈现。所有评论来自已完成观看的注册用户。</p>
+    </div>
+    <div class="tkd-rate-grid">
+      <div class="tkd-rate-card">
+        <div class="tkd-rate-score">4.8</div>
+        <div class="tkd-rate-stars">★★★★★</div>
+        <div class="tkd-rate-label">综合评分 · 共 12,486 条有效评价</div>
+        <div class="tkd-rate-bar"><span>制作</span><span class="tkd-rate-track"><span class="tkd-rate-fill" style="width:96%"></span></span><span class="tkd-rate-num">4.9</span></div>
+        <div class="tkd-rate-bar"><span>安全</span><span class="tkd-rate-track"><span class="tkd-rate-fill" style="width:98%"></span></span><span class="tkd-rate-num">4.9</span></div>
+        <div class="tkd-rate-bar"><span>创意</span><span class="tkd-rate-track"><span class="tkd-rate-fill" style="width:92%"></span></span><span class="tkd-rate-num">4.6</span></div>
+        <div class="tkd-rate-bar"><span>社区</span><span class="tkd-rate-track"><span class="tkd-rate-fill" style="width:94%"></span></span><span class="tkd-rate-num">4.7</span></div>
+      </div>
+      <div class="tkd-comment-list">
+        <div class="tkd-comment">
+          <div class="tkd-comment-head">
+            <span class="tkd-comment-avatar" style="background:#ffc65c">林</span>
+            <span class="tkd-comment-name">林间小径</span>
+            <span class="tkd-comment-time">2 小时前</span>
+          </div>
+          <p>看了三年，最打动我的不是场景多花哨，而是每一期都会把安全提示放在片头。这种认真让人放心。</p>
+        </div>
+        <div class="tkd-comment">
+          <div class="tkd-comment-head">
+            <span class="tkd-comment-avatar" style="background:#39e6c3">南</span>
+            <span class="tkd-comment-name">南方有雾</span>
+            <span class="tkd-comment-time">昨天</span>
+          </div>
+          <p>阿雾的教程真的救了我，第一次拍完全照着流程图走，节奏比以前顺畅太多，强烈建议新手先刷一遍。</p>
+        </div>
+        <div class="tkd-comment">
+          <div class="tkd-comment-head">
+            <span class="tkd-comment-avatar" style="background:#ff5a7a">周</span>
+            <span class="tkd-comment-name">周末不加班</span>
+            <span class="tkd-comment-time">2 天前</span>
+          </div>
+          <p>唯一想提的建议是希望能出音频版，通勤路上听访谈会更方便。整体还是很喜欢，剪辑节奏舒服。</p>
+        </div>
+        <div class="tkd-comment">
+          <div class="tkd-comment-head">
+            <span class="tkd-comment-avatar" style="background:#b98cff">阿</span>
+            <span class="tkd-comment-name">阿岚的相机</span>
+            <span class="tkd-comment-time">3 天前</span>
+          </div>
+          <p>灯光那期反复看了四遍，用两支小灯复刻了七成效果，成本不到两百块，性价比极高，感谢分享。</p>
+        </div>
+        <div class="tkd-comment">
+          <div class="tkd-comment-head">
+            <span class="tkd-comment-avatar" style="background:#5a9bff">第</span>
+            <span class="tkd-comment-name">第七个观众</span>
+            <span class="tkd-comment-time">4 天前</span>
+          </div>
+          <p>专题企划的更新频率很稳定，这点很难得。有些平台做两期就断了，这边是真的按计划在更。</p>
+        </div>
+        <div class="tkd-comment">
+          <div class="tkd-comment-head">
+            <span class="tkd-comment-avatar" style="background:#ff8f57">一</span>
+            <span class="tkd-comment-name">一只橘猫</span>
+            <span class="tkd-comment-time">5 天前</span>
+          </div>
+          <p>评论区氛围比我预想的好太多，大家讨论得很具体，没有互相攻击，看得出运营是有在认真管理的。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S7 企业动态 + 合作 + FAQ -->
+<section class="tkd-sec" id="tkd-news">
+  <div class="tkd-wrap">
+    <div class="tkd-sec-head">
+      <div class="tkd-sec-eyebrow">News / 企业动态</div>
+      <h2><span>官方发布</span>与内容更新日志</h2>
+      <p class="tkd-sec-desc">品牌资讯、规则更新与版本记录，统一在这里公开。</p>
+    </div>
+    <div class="tkd-news-list">
+      <div class="tkd-news">
+        <span class="tkd-news-date">2026-11-18</span>
+        <span class="tkd-news-title">第二季「十二间房」第七期上线，同步开放场景预约体验</span>
+        <span class="tkd-news-cat">内容更新</span>
+      </div>
+      <div class="tkd-news">
+        <span class="tkd-news-date">2026-11-09</span>
+        <span class="tkd-news-title">社区公约 3.0 发布：新增二次确认与素材授权细则</span>
+        <span class="tkd-news-cat">规则更新</span>
+      </div>
+      <div class="tkd-news">
+        <span class="tkd-news-date">2026-10-27</span>
+        <span class="tkd-news-title">创作者成长计划第四批招募开启，本期扩招至 30 人</span>
+        <span class="tkd-news-cat">官方发布</span>
+      </div>
+      <div class="tkd-news">
+        <span class="tkd-news-date">2026-10-12</span>
+        <span class="tkd-news-title">网站播放器升级：支持清晰度自动切换与收藏夹同步</span>
+        <span class="tkd-news-cat">产品更新</span>
+      </div>
+    </div>
+
+    <div class="tkd-sec-head" style="margin-top:44px">
+      <div class="tkd-sec-eyebrow">Partners / 合作品牌</div>
+      <h2>与我们<span>长期同行</span>的伙伴</h2>
+    </div>
+    <div class="tkd-partners">
+      <div class="tkd-partner">夜光器材<span>灯光设备支持</span></div>
+      <div class="tkd-partner">木言工坊<span>道具联合制作</span></div>
+      <div class="tkd-partner">安声科技<span>音频方案合作</span></div>
+      <div class="tkd-partner">城南影像<span>场地合作伙伴</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="tkd-sec" id="tkd-faq">
+  <div class="tkd-wrap">
+    <div class="tkd-sec-head">
+      <div class="tkd-sec-eyebrow">FAQ / 帮助中心</div>
+      <h2>关于<span>官网使用</span>的常见问题</h2>
+      <p class="tkd-sec-desc">点击问题展开答案。若仍未解决，可通过页面底部入口联系我们。</p>
+    </div>
+    <div class="tkd-faq">
+      <details>
+        <summary>挠脚心tk恶魔刑房是什么类型的视频品牌？</summary>
+        <p>我们是一个专注于沉浸式趣味互动内容的原创视频品牌，以场景化拍摄、氛围营造与创作者访谈为核心内容形式，所有作品均为正版原创并在官网首发。</p>
+      </details>
+      <details>
+        <summary>观看视频需要注册账号吗？</summary>
+        <p>浏览与播放高清内容无需注册。若需要点赞、收藏、参与投票或投稿，则需要完成账号注册与实名认证，以便内容管理与社区秩序维护。</p>
+      </details>
+      <details>
+        <summary>内容的安全边界是如何保障的？</summary>
+        <p>所有企划在拍摄前需经过内容组评估，现场必须明确安全词与暂停机制，参与者在任何阶段都可以无条件终止。素材发布前须获得本人书面授权。</p>
+      </details>
+      <details>
+        <summary>我可以向官网投稿自己的作品吗？</summary>
+        <p>可以。通过页面中的投稿入口提交企划简介、时长与素材授权说明，内容组会在五个工作日内回复。通过初审的作品可获得场景与后期支持。</p>
+      </details>
+      <details>
+        <summary>更新频率是怎样的？</summary>
+        <p>常驻栏目每周更新两至三期，专题企划按季度推进并保持至少每月一期，年度盘点与社区活动另行公告，具体以企业动态栏目为准。</p>
+      </details>
+      <details>
+        <summary>如何参与线上比赛与投票？</summary>
+        <p>比赛与投票会在专题企划与企业动态中同时公布，注册用户可在活动页面直接参与。投票结果将影响下一季部分场景的选题方向。</p>
+      </details>
+    </div>
+    <div class="tkd-hero-actions" style="margin-top:28px">
+      <button class="tkd-btn tkd-btn-primary" data-tkd-modal="submit">我要投稿</button>
+      <button class="tkd-btn tkd-btn-ghost" data-tkd-modal="feedback">反馈问题</button>
+      <button class="tkd-btn tkd-btn-ghost" data-tkd-modal="share">复制官网链接</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="tkd-footer">
+  <div class="tkd-wrap">
+    <div class="tkd-footer-grid">
+      <div>
+        <div class="tkd-brand" style="margin-bottom:14px">
+          <span class="tkd-brand-mark">挠</span>
+          <span>
+            <span class="tkd-brand-name">挠脚心tk恶魔刑房</span>
+            <span class="tkd-brand-sub">OFFICIAL VIDEO HUB</span>
+          </span>
+        </div>
+        <p>挠脚心tk恶魔刑房官方网站，持续运营的原创视频品牌。我们以专业制作与真诚态度，为社区提供高清、正版的精品内容，与创作者共同成长。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#tkd-focus">焦点内容</a></li>
+          <li><a href="#tkd-videos">视频专区</a></li>
+          <li><a href="#tkd-special">专题企划</a></li>
+          <li><a href="#tkd-authors">创作者</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与方式</h4>
+        <ul>
+          <li data-tkd-modal="submit">创作投稿</li>
+          <li data-tkd-modal="feedback">意见反馈</li>
+          <li data-tkd-modal="share">分享官网</li>
+          <li><a href="#tkd-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <ul>
+          <li>合作邮箱：hello@naojiaoxin.studio</li>
+          <li>内容合作：每周一至周五 10:00–19:00</li>
+          <li>社区支持：站内反馈通道</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tkd-footer-bottom">
+      <span>© 2026 挠脚心tk恶魔刑房 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容备案号：影像内容备-2026-1147 · 本站全部内容为原创正版，未经授权禁止转载</span>
+    </div>
+  </div>
+</footer>
+
+<button class="tkd-top-btn" id="tkdTopBtn" aria-label="回到顶部">↑</button>
+<div class="tkd-toast" id="tkdToast"></div>
+
+<div class="tkd-modal-mask" id="tkdModalMask">
+  <div class="tkd-modal" id="tkdModalBox" role="dialog" aria-modal="true" aria-label="操作面板"></div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('tkdToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('tkdBurger');
+  var nav = document.getElementById('tkdNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '✕' : '☰';
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && nav.classList.contains('is-open')){
+      nav.classList.remove('is-open');
+      burger.textContent = '☰';
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('tkdSearchInput');
+  var searchBtn = document.getElementById('tkdSearchBtn');
+  var searchMsg = document.getElementById('tkdSearchMsg');
+  var hotWords = ['刑房','灯光','安全词','教程','访谈','道具','专题','创作者','投票'];
+  function doSearch(){
+    var kw = searchInput.value.trim();
+    if(!kw){
+      searchMsg.textContent = '试试搜索：' + hotWords.slice(0,4).join(' / ');
+      searchMsg.classList.add('is-show');
+      return;
+    }
+    var hit = hotWords.filter(function(w){ return w.indexOf(kw) > -1 || kw.indexOf(w) > -1; });
+    if(hit.length){
+      searchMsg.textContent = '已为你匹配「' + hit.join('、') + '」相关内容，可前往视频专区查看。';
+    }else{
+      searchMsg.textContent = '暂未收录「' + kw + '」，已记录你的搜索，内容组会优先补充。';
+    }
+    searchMsg.classList.add('is-show');
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){ if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }});
+  searchInput.addEventListener('input', function(){ searchMsg.classList.remove('is-show'); });
+
+  /* 点赞 */
+  document.querySelectorAll('[data-tkd-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      var txt = span.textContent;
+      var on = btn.classList.toggle('is-on');
+      if(on){
+        btn.firstChild.textContent = '❤️ ';
+        showToast('已点赞，感谢你的支持');
+      }else{
+        btn.firstChild.textContent = '🤍 ';
+        showToast('已取消点赞');
+      }
+      span.textContent = txt;
+    });
+  });
+
+  /* 收藏 */
+  document.querySelectorAll('[data-tkd-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('is-on');
+      btn.textContent = on ? '★' : '☆';
+      showToast(on ? '已加入收藏夹' : '已从收藏夹移除');
+    });
+  });
+
+  /* 弹窗 */
+  var mask = document.getElementById('tkdModalMask');
+  var box = document.getElementById('tkdModalBox');
+
+  var panels = {
+    share: function(){
+      return '<button class="tkd-modal-close" data-tkd-close aria-label="关闭">✕</button>' +
+        '<h3>分享挠脚心tk恶魔刑房官网</h3>' +
+        '<p>把官网分享给同好，一起参与社区共创。你也可以直接复制页面链接。</p>' +
+        '<div class="tkd-share-row">' +
+          '<button data-tkd-copy>复制链接</button>' +
+          '<button data-tkd-shareto="微信">微信</button>' +
+          '<button data-tkd-shareto="微博">微博</button>' +
+          '<button data-tkd-shareto="QQ">QQ</button>' +
+        '</div>';
+    },
+    comment: function(){
+      return '<button class="tkd-modal-close" data-tkd-close aria-label="关闭">✕</button>' +
+        '<h3>参与讨论</h3>' +
+        '<p>留言会经过审核后展示，请保持善意与具体表达。当前视频已累计 2,146 条讨论。</p>' +
+        '<label for="tkdCommentInput">写下你的看法</label>' +
+        '<textarea id="tkdCommentInput" placeholder="例如：这期的灯光处理很有意思，结尾的停顿节奏值得借鉴"></textarea>' +
+        '<button class="tkd-btn tkd-btn-primary" data-tkd-submit-comment>提交评论</button>';
+    },
+    submit: function(){
+      return '<button class="tkd-modal-close" data-tkd-close aria-label="关闭">✕</button>' +
+        '<h3>创作投稿 / 活动报名</h3>' +
+        '<p>填写基本企划信息即可进入初审，内容组会在五个工作日内回复。</p>' +
+        '<label for="tkdFormName">创作者昵称</label>' +
+        '<input id="tkdFormName" type="text" placeholder="你的昵称或团队名">' +
+        '<label for="tkdFormTopic">企划主题</label>' +
+        '<input id="tkdFormTopic" type="text" placeholder="例如：镜面回廊的压力设计">' +
+        '<label for="tkdFormDesc">简要说明</label>' +
+        '<textarea id="tkdFormDesc" placeholder="时长、场景需求、素材授权情况"></textarea>' +
+        '<button class="tkd-btn tkd-btn-primary" data-tkd-submit-form>提交企划</button>';
+    },
+    feedback: function(){
+      return '<button class="tkd-modal-close" data-tkd-close aria-label="关闭">✕</button>' +
+        '<h3>意见反馈</h3>' +
+        '<p>你的每一条反馈都会被记录，涉及规则的问题会在企业动态中统一回复。</p>' +
+        '<label for="tkdFbType">反馈类型</label>' +
+        '<input id="tkdFbType" type="text" placeholder="功能 / 内容 / 社区规则">' +
+        '<label for="tkdFbDesc">具体描述</label>' +
+        '<textarea id="tkdFbDesc" placeholder="请尽量描述清楚出现问题的位置与场景"></textarea>' +
+        '<button class="tkd-btn tkd-btn-primary" data-tkd-submit-feedback>提交反馈</button>';
+    }
+  };
+
+  function openModal(key){
+    if(!panels[key]) return;
+    box.innerHTML = panels[key]();
+    mask.classList.add('is-show');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    mask.classList.remove('is-show');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('click', function(e){
+    var trigger = e.target.closest('[data-tkd-modal]');
+    if(trigger){
+      e.preventDefault();
+      openModal(trigger.getAttribute('data-tkd-modal'));
+      return;
+    }
+    if(e.target.closest('[data-tkd-close]')){ closeModal(); return; }
+    if(e.target === mask){ closeModal(); return; }
+
+    if(e.target.closest('[data-tkd-copy]')){
+      var url = location.href;
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(url).then(function(){
+          showToast('链接已复制到剪贴板');
+        }).catch(function(){
+          showToast('复制失败，请手动选择页面地址');
+        });
+      }else{
+        showToast('当前浏览器不支持自动复制');
+      }
+      return;
+    }
+    var shareTo = e.target.closest('[data-tkd-shareto]');
+    if(shareTo){
+      showToast('已生成' + shareTo.getAttribute('data-tkd-shareto') + '分享卡片');
+      return;
+    }
+    if(e.target.closest('[data-tkd-submit-comment]')){
+      var c = document.getElementById('tkdCommentInput');
+      if(!c || !c.value.trim()){ showToast('请先写下你的看法'); return; }
+      showToast('评论已提交，审核通过后展示');
+      closeModal();
+      return;
+    }
+    if(e.target.closest('[data-tkd-submit-form]')){
+      var n = document.getElementById('tkdFormName');
+      var t = document.getElementById('tkdFormTopic');
+      if(!n || !n.value.trim() || !t || !t.value.trim()){ showToast('请填写昵称与企划主题'); return; }
+      showToast('企划已提交，内容组将在五个工作日内回复');
+      closeModal();
+      return;
+    }
+    if(e.target.closest('[data-tkd-submit-feedback]')){
+      var d = document.getElementById('tkdFbDesc');
+      if(!d || !d.value.trim()){ showToast('请补充具体描述'); return; }
+      showToast('反馈已收到，感谢你的建议');
+      closeModal();
+      return;
+    }
+    var authorBtn = e.target.closest('[data-tkd-author]');
+    if(authorBtn){
+      box.innerHTML = '<button class="tkd-modal-close" data-tkd-close aria-label="关闭">✕</button>' +
+        '<h3>创作者档案</h3><p>' + authorBtn.getAttribute('data-tkd-author') + '</p>';
+      mask.classList.add('is-show');
+      document.body.style.overflow = 'hidden';
+    }
+  });
+
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ closeModal(); }});
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('tkdTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 620){ topBtn.classList.add('is-show'); }
+    else{ topBtn.classList.remove('is-show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+})();
+</script>
+
+</body>
+              </html>
